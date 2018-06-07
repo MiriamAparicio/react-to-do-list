@@ -61,7 +61,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">React To-Do-List</h1>
         </header>
-        <div class="container">
+        <div className="container">
           <Title todoCount={this.state.data.length} />
           <ToDoForm addTodo={this.addTodo.bind(this)} />
           <ToDoList
