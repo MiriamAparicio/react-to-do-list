@@ -1,13 +1,13 @@
 import React from 'react';
 
-const ToDoForm = ({ addTodo }) => {
+const ToDoForm = (props) => {
   // Input Tracker
   let input;
   // Return JSX
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
-      addTodo(input.value);
+      props.addTodo(input.value);
       input.value = '';
     }}>
       <input className="form-control col-md-12" ref={node => {

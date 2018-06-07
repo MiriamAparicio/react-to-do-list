@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Title = ({ todoCount }) => {
+const Title = (props) => {
   return (
     <div>
       <div>
-        <h1>To-Do ({todoCount})</h1>
+        <h1>To-Do ({props.todoCount})</h1>
       </div>
     </div>
   );

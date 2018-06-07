@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Todo = ({ todo, remove }) => {
+const Todo = (props) => {
   // Each Todo
-  return (<a href="#" className="list-group-item" onClick={() => { remove(todo.id) }}>{todo.text}</a>);
+  return (<a href="#" className="list-group-item" onClick={() => { props.remove(props.todo.id) }}>{props.todo.text}</a>);
 }
 
-const ToDoList = ({ todos, remove }) => {
+const ToDoList = (props) => {
   // Map through the todos
-  const todoNode = todos.map((todo) => {
-    return (<Todo todo={todo} key={todo.id} remove={remove} />)
+  const todoNode = props.todos.map((todo) => {
+    return (<Todo todo={todo} key={todo.id} remove={props.remove} />)
   });
   return (<div className="list-group">{todoNode}</div>);
 }
