@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Title from './components/Title';
-import ToDoForm from './components/ToDoForm';
-import ToDoList from './components/ToDoList';
+import Title from './Title';
+import ToDoForm from './ToDoForm';
+import ToDoList from './ToDoList';
 
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
 
 
